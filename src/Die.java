@@ -4,7 +4,8 @@ public class Die {
 
     public int currSide; //should this be private or public
     private int numSides;
-    public final int DEFAULT_SIDES = 6;
+    public final int SIX_SIDES = 6;
+    public final int TWELVE_SIDES = 12;
 
 
     /**
@@ -25,6 +26,9 @@ public class Die {
         currSide = rollNum.nextInt(numSides) +1; //variable.method(parameter) // returns a random number in rollNum range
     }
 
+    /**
+     * @return the number rolled on the die
+     */
     public int getValue() {
         return currSide;
     }
