@@ -19,6 +19,9 @@ public class Die {
         currSide = sides;
     }
 
+    /**
+     * Constructor, initializes the die with default values
+     */
     public Die() {
         numSides = DEFAULT_SIDES;
         currSide = DEFAULT_SIDES;
