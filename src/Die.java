@@ -4,8 +4,6 @@ public class Die {
 
     public int currSide; //should this be private or public
     private int numSides;
-    public final int SIX_SIDES = 6;
-    public final int TWELVE_SIDES = 12;
 
 
     /**
