@@ -1,4 +1,6 @@
-import  java.util.Random;
+/**
+ * represents a single die
+ */
 
 public class Die {
 
