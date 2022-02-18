@@ -5,13 +5,12 @@ public class Client {
 
     public static void main(String[] args) {
 
-        int SIX_SIDES = 6;
-        int TWELVE_SIDES = 12;
+        final int TWELVE_SIDES = 12; //how to define this constant in die without error
 
         Scanner getUserInput; //declaring
 
         Die die1;
-        die1 = new Die(SIX_SIDES);
+        die1 = new Die();
 
         Die die2;
         die2 = new Die(TWELVE_SIDES);
@@ -23,12 +22,13 @@ public class Client {
 
             if (die1.getValue() == die2.getValue() * 2 || die2.getValue() == die1.getValue() * 2) {
                 System.out.println("game over, double value!");
-            }
-            else{
+            } else {
                 getUserInput = new Scanner(System.in); //gets user input
                 getUserInput.nextLine(); //returns a string, tells you what UI is
+                //need code here that restarts the loop after enter is pressed
             }
 
 
         }
     }
+}

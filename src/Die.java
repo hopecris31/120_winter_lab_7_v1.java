@@ -2,10 +2,13 @@
  * represents a single die
  */
 
+import java.util.Random;
+
 public class Die {
 
     public int currSide; //should this be private or public
     private int numSides;
+    public final int DEFAULT_SIDES = 6;
 
 
     /**
@@ -14,6 +17,11 @@ public class Die {
     public Die(int sides) { //do not have to define data type in constructor
         numSides = sides;
         currSide = sides;
+    }
+
+    public Die() {
+        numSides = DEFAULT_SIDES;
+        currSide = DEFAULT_SIDES;
     }
 
     /**
